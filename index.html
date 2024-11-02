@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color:black;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200;
+            margin: 10px auto;
+            text-align: center;
+            padding-bottom: 30px;
+            background-color: #e6cfdf;
+            border-radius: 10px;
+        }
+        .movie{ 
+            display: inline-block;
+            background-color: #fad8f5;
+            margin: 10px ;
+            padding:15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px white;
+            width: 250px;
+            vertical-align: top;
+            text-align: center;
+        }
+        .movie img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .movie p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: black;
+        }
+        #movieList {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        input, button{
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+        button {
+            background-color:#9ad4df;
+            color:white;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>˚˖𓍢ִ໋ Movies Search ˚˖𓍢ִ໋</h1>
+        <p>۶ৎ────୨ৎ────۶ৎ</p>
+        <input id="movieInput" type="text" placeholder="Type Quickly!!!">
+        <button onclick="searchMovie()">Search</button>
+        <p>﷽</p>
+        <p>(っ- ‸ - ς)</p>
+    </div>
+    <div id="movieList" class="movieList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
